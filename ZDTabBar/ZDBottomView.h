@@ -7,9 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ZDBottomView;
+
+@protocol ZDBottomViewDelegate <NSObject>
+
+- (void)bottomView:(ZDBottomView *)bottomView index:(NSUInteger)idx;
+
+@end
 
 @interface ZDBottomView : UIView
 
+@property (weak,nonatomic) id<ZDBottomViewDelegate> delegate;
 
 - (void)addBottomBtnWithNorImage:(UIImage *)norImage selImage:(UIImage *)selImage;
 @end

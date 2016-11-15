@@ -15,7 +15,7 @@
 #import "ZDBottomView.h"
 
 
-@interface ZDTabBarViewController ()
+@interface ZDTabBarViewController ()<ZDBottomViewDelegate>
 
 @end
 
@@ -25,16 +25,16 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
     
     // 设置子控制器
     [self setupChildVCs];
     
     // 自定义tabBar
     [self setupBottomView];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 #pragma mark - 设置子控制器
@@ -64,6 +64,8 @@
     bottomView.backgroundColor = [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0];
     bottomView.frame = self.tabBar.bounds;
     [self.tabBar addSubview:bottomView];
+    bottomView.delegate = self;
+    
     
     // 遍历子控制器，添加按钮
     [self.viewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -80,6 +82,12 @@
     
 }
 
+#pragma mark - 实现代理方法
+- (void)bottomView:(ZDBottomView *)bottomView index:(NSUInteger)idx {
+
+    self.selectedIndex = idx;
+
+}
 
 /*
 #pragma mark - Navigation

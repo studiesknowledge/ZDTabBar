@@ -24,8 +24,9 @@
 
     // 创建按钮，设置属性
     ZDButton *btn = [ZDButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:norImage forState:UIControlStateNormal];
-    [btn setImage:selImage forState:UIControlStateSelected];
+    [btn setBackgroundImage:norImage forState:UIControlStateNormal];
+    [btn setBackgroundImage:selImage forState:UIControlStateSelected];
+    
     [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     
     [self addSubview:btn];
@@ -41,6 +42,12 @@
     btn.selected = YES;
     // 赋值
     self.selectedBtn = btn;
+    
+    
+    if ([self.delegate respondsToSelector:@selector(bottomView:index:)]) {
+        
+        [self.delegate bottomView:self index:btn.tag];
+    }
 
 }
 
