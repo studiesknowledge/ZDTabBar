@@ -9,10 +9,9 @@
 /* Begin PBXBuildFile section */
 		4DEAB3761DDADDED00671F4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAB3751DDADDED00671F4B /* main.m */; };
 		4DEAB3791DDADDED00671F4B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAB3781DDADDED00671F4B /* AppDelegate.m */; };
-		4DEAB37C1DDADDED00671F4B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAB37B1DDADDED00671F4B /* ViewController.m */; };
-		4DEAB37F1DDADDED00671F4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAB37D1DDADDED00671F4B /* Main.storyboard */; };
 		4DEAB3811DDADDED00671F4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAB3801DDADDED00671F4B /* Assets.xcassets */; };
 		4DEAB3841DDADDED00671F4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAB3821DDADDED00671F4B /* LaunchScreen.storyboard */; };
+		4DEAB38D1DDADE8F00671F4B /* ZDTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAB38C1DDADE8F00671F4B /* ZDTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +19,11 @@
 		4DEAB3751DDADDED00671F4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4DEAB3771DDADDED00671F4B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4DEAB3781DDADDED00671F4B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4DEAB37A1DDADDED00671F4B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4DEAB37B1DDADDED00671F4B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		4DEAB37E1DDADDED00671F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4DEAB3801DDADDED00671F4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DEAB3831DDADDED00671F4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DEAB3851DDADDED00671F4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DEAB38B1DDADE8F00671F4B /* ZDTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDTabBarViewController.h; sourceTree = "<group>"; };
+		4DEAB38C1DDADE8F00671F4B /* ZDTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +58,8 @@
 			children = (
 				4DEAB3771DDADDED00671F4B /* AppDelegate.h */,
 				4DEAB3781DDADDED00671F4B /* AppDelegate.m */,
-				4DEAB37A1DDADDED00671F4B /* ViewController.h */,
-				4DEAB37B1DDADDED00671F4B /* ViewController.m */,
-				4DEAB37D1DDADDED00671F4B /* Main.storyboard */,
+				4DEAB38B1DDADE8F00671F4B /* ZDTabBarViewController.h */,
+				4DEAB38C1DDADE8F00671F4B /* ZDTabBarViewController.m */,
 				4DEAB3801DDADDED00671F4B /* Assets.xcassets */,
 				4DEAB3821DDADDED00671F4B /* LaunchScreen.storyboard */,
 				4DEAB3851DDADDED00671F4B /* Info.plist */,
@@ -110,6 +107,7 @@
 				TargetAttributes = {
 					4DEAB3701DDADDED00671F4B = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = N7GP8GD5WQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -139,7 +137,6 @@
 			files = (
 				4DEAB3841DDADDED00671F4B /* LaunchScreen.storyboard in Resources */,
 				4DEAB3811DDADDED00671F4B /* Assets.xcassets in Resources */,
-				4DEAB37F1DDADDED00671F4B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,7 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4DEAB37C1DDADDED00671F4B /* ViewController.m in Sources */,
+				4DEAB38D1DDADE8F00671F4B /* ZDTabBarViewController.m in Sources */,
 				4DEAB3791DDADDED00671F4B /* AppDelegate.m in Sources */,
 				4DEAB3761DDADDED00671F4B /* main.m in Sources */,
 			);
@@ -159,14 +156,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4DEAB37D1DDADDED00671F4B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4DEAB37E1DDADDED00671F4B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4DEAB3821DDADDED00671F4B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7GP8GD5WQ;
 				INFOPLIST_FILE = ZDTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-2.ZDTabBar";
@@ -283,6 +273,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = N7GP8GD5WQ;
 				INFOPLIST_FILE = ZDTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-2.ZDTabBar";
